@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Grim Reaper</title>
+        <title>CodeIgniter Tutorial</title>
     </head>
     <body>
 

@@ -1,3 +1,3 @@
-<em>footer</em>
+<em>&copy; 2015</em>
         </body>
 </html>
