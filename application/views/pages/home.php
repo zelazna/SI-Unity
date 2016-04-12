@@ -7,4 +7,6 @@
 </div>
 <div>Des liens FRERE!!
     <a href="users">Highscores</a>
+    <a href="users/signup">S'inscrire</a>
+    <a href="users/login">Login</a>
 </div>

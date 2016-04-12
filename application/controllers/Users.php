@@ -8,6 +8,7 @@ class Users extends CI_Controller
         parent::__construct();
         $this->load->model('users_model');
         $this->load->helper('url_helper');
+        //$this->load->library('session');
     }
 
     public function index()
@@ -34,5 +35,24 @@ class Users extends CI_Controller
         $this->load->view('templates/footer');
     }
 
+    public function signup()
+    {
+        $this->load->helper('form');
+        $this->load->library('form_validation');
 
+        $data['title'] = 'S\'inscrire';
+
+        $this->form_validation->set_rules('pseudo', 'Pseudo', 'required');
+        $this->form_validation->set_rules('password', 'Password', 'required');
+
+        if ($this->form_validation->run() === FALSE) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('users/signup');
+            $this->load->view('templates/footer');
+
+        } else {
+            $this->users_model->set_user();
+            $this->load->view('users/success');
+        }
+    }
 }
