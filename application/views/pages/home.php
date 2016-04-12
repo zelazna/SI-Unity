@@ -1,4 +1,5 @@
-<?php var_dump($_SESSION)?>
+<?php session_start();
+var_dump($_SESSION) ?>
 <h1 class="red">Home</h1>
 <div>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -7,7 +8,7 @@
     Nemo.
 </div>
 <div>Des liens FRERE!!
-    <a href="users">Highscores</a>
-    <a href="users/signup">S'inscrire</a>
-    <a href="connexion/index">Login</a>
+    <a href="index.php/users">Highscores</a>
+    <a href="index.php/users/signup">S'inscrire</a>
+    <a href="index.php/connexion/index">Login</a>
 </div>

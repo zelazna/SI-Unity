@@ -13,3 +13,4 @@
 #
 ##   Toutes les autres URL vont être redirigées vers le fichier index.php.
 #RewriteRule ^(.*)$ index.php/$1 [L]
+#@todo remettre en place l'url rewriting
