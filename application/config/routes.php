@@ -49,10 +49,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+$route['connexion/index'] = 'connexion/index';
 $route['users/signup'] = 'users/signup';
 $route['users/(:any)'] = 'users/view/$1';
 $route['users'] = 'users';
-$route['(:any)'] = 'users/view/$1';
+//$route['(:any)'] = 'users/view/$1';
+$route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'pages/view';
+
 //test a enlver si ca foire
 $route['translate_uri_dashes'] = TRUE;

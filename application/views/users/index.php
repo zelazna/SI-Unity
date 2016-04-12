@@ -5,9 +5,9 @@
 
     foreach ($users as $users_details): ?>
         <tr>
-            <td><?php echo $users_details['pseudo']; ?></td>
+            <td><?php echo $users_details['username']; ?></td>
             <td class="main"><?php echo $users_details['score']; ?></td>
-            <td><a href="<?php echo site_url('users/' . $users_details['pseudo']); ?>">View Player</a></td>
+            <td><a href="<?php echo site_url('users/' . $users_details['username']); ?>">View Player</a></td>
         </tr>
     <?php endforeach; ?>
 </table>

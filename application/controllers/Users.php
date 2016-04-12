@@ -8,7 +8,6 @@ class Users extends CI_Controller
         parent::__construct();
         $this->load->model('users_model');
         $this->load->helper('url_helper');
-        //$this->load->library('session');
     }
 
     public function index()
@@ -21,14 +20,14 @@ class Users extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function view($pseudo = NULL)
+    public function view($username = NULL)
     {
-        $data['users_unique'] = $this->users_model->get_score($pseudo);
+        $data['users_unique'] = $this->users_model->get_score($username);
         if (empty($data['users_unique'])) {
             show_404();
         }
 
-        $data['title'] = $data['users_unique']['pseudo'];
+        $data['title'] = $data['users_unique']['username'];
 
         $this->load->view('templates/header', $data);
         $this->load->view('users/view', $data);
@@ -42,7 +41,7 @@ class Users extends CI_Controller
 
         $data['title'] = 'S\'inscrire';
 
-        $this->form_validation->set_rules('pseudo', 'Pseudo', 'required');
+        $this->form_validation->set_rules('username', 'Username', 'required');
         $this->form_validation->set_rules('password', 'Password', 'required');
 
         if ($this->form_validation->run() === FALSE) {

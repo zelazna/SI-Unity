@@ -5,6 +5,7 @@
 */cache/*
 !*/cache/index.html
 !*/cache/.htaccess
+ci_sessions
 ### OSX template
 .DS_Store
 .AppleDouble
