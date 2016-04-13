@@ -23,7 +23,7 @@ class VerifyLogin extends CI_Controller
             $data['title'] = 'Fail';
             $this->load->view('connexion/index', $data);
         } else {
-            //Go to private area
+            //redirectionne la page et la refresh
             redirect('pages/view/game', 'refresh');
         }
 

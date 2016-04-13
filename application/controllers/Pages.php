@@ -10,7 +10,7 @@ class Pages extends CI_Controller
         $this->load->helper('url_helper');
 
     }
-    
+
     public function view($page = 'home')
     {
         //APPATH = application Path

@@ -16,6 +16,7 @@ class Users extends CI_Controller
         $data['users'] = $this->users_model->get_score();
         $data['title'] = 'HighScores';
         //chargements des vues
+
         $this->load->view('templates/header', $data);
         $this->load->view('users/index', $data);
         $this->load->view('templates/footer');
@@ -41,10 +42,11 @@ class Users extends CI_Controller
         $this->load->library('form_validation');
 
         $data['title'] = 'S\'inscrire';
-
+        
         $this->form_validation->set_rules('username', 'Username', 'required');
         $this->form_validation->set_rules('password', 'Password', 'required');
-
+        $this->form_validation->set_rules('passconf', 'Password Confirmation', 'required');
+        $this->form_validation->set_rules('email', 'Email', 'required');
         if ($this->form_validation->run() === FALSE) {
             $this->load->view('templates/header', $data);
             $this->load->view('users/signup');
@@ -52,7 +54,11 @@ class Users extends CI_Controller
 
         } else {
             $this->users_model->set_user();
-            $this->load->view('users/success');
+            redirect('/pages/view', 'refresh');
+//            $this->load->view('templates/header', $data);
+//            $this->load->view('users/view');
+//            $this->load->view('templates/footer');
+
         }
     }
 }

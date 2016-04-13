@@ -27,15 +27,17 @@ class Users_model extends CI_Model
         }
 
     }
-    
+
     public function set_user()
     {
         $this->load->helper('url');
 
         $username = url_title($this->input->post('username'), 'dash', TRUE);
+        $email = url_title($this->input->post('email'));
 
         $data = array(
             'username' => $username,
+            'email' => $email,
             'password' => md5($this->input->post('password'))
         );
 
