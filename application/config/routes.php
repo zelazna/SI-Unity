@@ -59,6 +59,7 @@ $route['form/index'] = 'form/index';
 $route['verifylogin'] = 'verifylogin';
 $route['home/logout'] = 'home/logout';
 $route['users/signup'] = 'users/signup';
+$route['game']='pages/view/game';
 $route['users/(:any)'] = 'users/view/$1';
 $route['users'] = 'users';
 //$route['(:any)'] = 'users/view/$1';
