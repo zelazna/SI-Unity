@@ -3,6 +3,12 @@
 class Pages extends CI_Controller
 {
 
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->library('session');
+    }
+    
     public function view($page = 'home')
     {
         //APPATH = application Path
@@ -10,7 +16,7 @@ class Pages extends CI_Controller
             show_404();
         }
         //title qui est injecté dans views/pages
-        $data['title'] = ucfirst($page); 
+        $data['title'] = ucfirst($page);
         //on les load
         $this->load->view('templates/header', $data);
         $this->load->view('pages/' . $page, $data);

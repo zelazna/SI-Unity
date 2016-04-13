@@ -15,15 +15,16 @@ class VerifyLogin extends CI_Controller
     {
         //This method will have the credentials validation
         $this->load->library('form_validation');
-        $this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
-        $this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|callback_check_database');
+        $this->form_validation->set_rules('username', 'Username', 'required');
+        $this->form_validation->set_rules('password', 'Password', 'required|callback_check_database');
 
         if ($this->form_validation->run() == FALSE) {
             //Field validation failed.  User redirected to login page
-            $this->load->view('login');
+            $data['title'] = 'Fail';
+            $this->load->view('connexion/index', $data);
         } else {
             //Go to private area
-            redirect('users/signup', 'refresh');
+            redirect('pages/view/game', 'refresh');
         }
 
     }
@@ -34,7 +35,7 @@ class VerifyLogin extends CI_Controller
         $username = $this->input->post('username');
 
         //query the database
-        $result = $this->user->login($username, $password);
+        $result = $this->connexion_model->login($username, $password);
 
         if ($result) {
             $sess_array = array();
@@ -43,7 +44,8 @@ class VerifyLogin extends CI_Controller
                     'id' => $row->id,
                     'username' => $row->username
                 );
-                $this->session->set_userdata('logged_in', $sess_array);
+                $this->session->set_userdata($sess_array);
+                $_SESSION = $sess_array;
             }
             return TRUE;
         } else {

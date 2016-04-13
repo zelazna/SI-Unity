@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('connexion/login'); ?>
+<?php echo form_open('verifylogin'); ?>
 
 <label for="username">Username</label>
 <input type="text" size="20" id="username" name="username"/>

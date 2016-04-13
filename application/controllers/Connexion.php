@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class Connexion extends CI_Controller
 {
@@ -7,15 +7,16 @@ class Connexion extends CI_Controller
     {
         parent::__construct();
         $this->load->helper('url_helper');
+        $this->load->library('session');
     }
 
     public function index()
     {
         $data['title'] = 'Login';
         $this->load->helper('form');
-        $this->load->view('templates/header',$data);
+        $this->load->view('templates/header', $data);
         $this->load->view('connexion/index');
-        $this->load->view('templates/footer',$data);
+        $this->load->view('templates/footer', $data);
     }
 
 }

@@ -2,6 +2,11 @@
 
 Class Connexion_model extends CI_Model
 {
+    public function __construct()
+    {
+        $this->load->database();
+    }
+
     function login($username, $password)
     {
         $this->db->select('id, username, password');

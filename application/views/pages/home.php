@@ -1,5 +1,3 @@
-<?php session_start();
-var_dump($_SESSION) ?>
 <h1 class="red">Home</h1>
 <div>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -11,4 +9,5 @@ var_dump($_SESSION) ?>
     <a href="index.php/users">Highscores</a>
     <a href="index.php/users/signup">S'inscrire</a>
     <a href="index.php/connexion/index">Login</a>
+    <a href="index.php/pages/view/game">Jouer</a>
 </div>
