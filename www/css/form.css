@@ -1,0 +1,86 @@
+header {
+    width: 100%;
+    padding-top: 75px;
+    text-align: center;
+    background-color: #070707;
+}
+img {
+    height: 40px;
+}
+h2 {
+    font-family: 'CircularStd-Book';
+    font-size: 18px;
+    margin: 10px 0 40px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #959595;
+}
+li.facebook {
+    width: 400px;
+    height: 45px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50px;
+    background: #141414;
+}
+li.facebook a {
+    font-size: 18px;
+    line-height: 45px;
+    color: #959595;
+}
+p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #959595;
+}
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+input[type='text'], input[type='name'], input[type='password'], input[type='email'], input[type='date'] {
+    font-size: 18px;
+    display: block;
+    box-sizing: border-box;
+    width: 400px;
+    height: 45px;
+    margin: 0 auto;
+    padding-left: 27px;
+    color: #959595;
+    border: 2px solid #131821;
+    border-radius: 100px;
+    background-color: #070707;
+}
+h3.birthday, .profiles h3, .schools h3 {
+    font-size: 20px;
+}
+h3.birthday {
+    display: inline-block;
+    margin-right: 20px;
+}
+input[type='date'] {
+    font-family: 'CircularStd-Book';
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    color: #0f0733;
+}
+input[type='date']::-webkit-inner-spin-button, input[type='date']::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+label {
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px 20px;
+    color: #5037cc;
+}
+input:focus {
+    border: 2px solid #212a3b;
+    outline: none;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
