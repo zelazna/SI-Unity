@@ -1,5 +1,5 @@
-<footer 
-        class="red">Footer a integrer
-</footer>
-</body>
-</html>
+<!--<footer -->
+<!--        class="red">Footer a integrer-->
+<!--</footer>-->
+<!--</body>-->
+<!--</html>-->

@@ -64,7 +64,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 <div id="container">
-    <h1>BLAIREAU!!</h1>
     <h1><?php echo $heading; ?></h1>
     <?php echo $message; ?>
 </div>

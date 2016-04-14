@@ -19,7 +19,7 @@
 
 <div>Des liens FRERE!!
     <a href="users">Highscores</a>
-    <a href="users/signup">S'inscrire</a>
+    <a href="signup">S'inscrire</a>
     <a href="connexion/index">Login</a>
     <a href="game">Jouer</a>
 </div>
