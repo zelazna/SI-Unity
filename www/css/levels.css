@@ -120,9 +120,6 @@ div.level4 {
     margin-top: 30px;
     background-image: url(../img/level4.png);
 }
-div.level1:hover {
-    opacity: 80%;
-}
 div img {
     display: block;
     margin: 0 auto;
@@ -154,7 +151,7 @@ div img {
     Highscore
    ========================================================================== */
 
-.highscore {
+.highscore, .profil {
     position: absolute;
     z-index: 9999;
     top: 50%;
@@ -162,39 +159,66 @@ div img {
     width: 400px;
     padding-bottom: 50px;
     transform: translate(-50%, -50%);
-    background: rgba(19, 24, 33, 1);
-    background: -moz-linear-gradient(top, rgba(19, 24, 33, 1) 0%, rgba(136, 54, 54, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(19, 24, 33, 1)), color-stop(100%, rgba(136, 54, 54, 1)));
-    background: -webkit-linear-gradient(top, rgba(19, 24, 33, 1) 0%, rgba(136, 54, 54, 1) 100%);
-    background: -o-linear-gradient(top, rgba(19, 24, 33, 1) 0%, rgba(136, 54, 54, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(19, 24, 33, 1) 0%, rgba(136, 54, 54, 1) 100%);
-    background: linear-gradient(to bottom, rgba(19, 24, 33, 1) 0%, rgba(136, 54, 54, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#131821', endColorstr='#883636', GradientType=0);
+    background: rgba(136, 54, 54, 1);
+    background: -moz-linear-gradient(top, rgba(136, 54, 54, 1) 0%, rgba(19, 24, 33, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(136, 54, 54, 1)), color-stop(100%, rgba(19, 24, 33, 1)));
+    background: -webkit-linear-gradient(top, rgba(136, 54, 54, 1) 0%, rgba(19, 24, 33, 1) 100%);
+    background: -o-linear-gradient(top, rgba(136, 54, 54, 1) 0%, rgba(19, 24, 33, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(136, 54, 54, 1) 0%, rgba(19, 24, 33, 1) 100%);
+    background: linear-gradient(to bottom, rgba(136, 54, 54, 1) 0%, rgba(19, 24, 33, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#883636', endColorstr='#131821', GradientType=0);
 }
-.highscore h1 {
-    font-family: 'CircularStd-Book';
-    font-size: 26px;
+.highscore h1, .profil h1 {
+    font-family: 'CircularStd-Bold';
+    font-size: 30px;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
-    color: #e1523a;
+    color: #fff;
 }
 .highscore .inner {
-    max-width: 250px;
+    max-width: 180px;
     margin: 0 auto;
 }
-.highscore h2, .highscore p {
+.profil .inner {
+    max-width: 95px;
+    margin: 0 auto;
+}
+.highscore h2, .highscore p, .profil h2, .profil p {
     display: inline-block;
 }
-.highscore h2 {
-    font-family: 'CircularStd-Bold';
-    font-size: 20px;
+.highscore h2, .profil h2 {
+    font-family: 'CircularStd-Book';
+    font-size: 22px;
     margin-top: 20px;
-    margin-right: 160px;
     color: #fff;
 }
-.highscore p {
+.highscore h2 {
+    width: 125px;
+}
+.profil h2 {
+    width: 50px;
+    text-align: center;
+}
+.highscore p, .profil p {
     font-family: 'CircularStd-Black';
     font-size: 28px;
+    vertical-align: middle;
     color: #fff;
+}
+.profil p img {
+    height: 30px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+/* display:none */
+
+
+.profil {
+    display: none;
+}
+
+.highscore {
+    display: none;
 }
