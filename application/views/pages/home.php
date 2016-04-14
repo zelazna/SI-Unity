@@ -175,9 +175,9 @@
 <header>
     <nav>
         <ul>
-            <li><a href="<?php echo base_url();?>users">Highscores</a></li>
-            <li><a href="<?php echo base_url();?>login">Sign in</a></li>
-            <li><a href="<?php echo base_url();?>signup">Create account</a></li>
+            <li><a href="<?php echo base_url(); ?>users">Highscores</a></li>
+            <li><a href="<?php echo base_url(); ?>login">Sign in</a></li>
+            <li><a href="<?php echo base_url(); ?>signup">Create account</a></li>
         </ul>
     </nav>
 </header>
@@ -193,7 +193,7 @@
     </div>
 </div>
 
-<a href="<?php echo base_url();?>game">
+<a href="<?php echo base_url(); ?>game">
     <button type="button" name="button">Play</button>
 </a>
 
