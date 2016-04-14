@@ -1,3 +1,6 @@
+<FilesMatch ".(eot|ttf|otf|woff)">
+	Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
 #   Empêche la visualisation de l'arborescence, n'a rien à voir avec le masquage du « index.php ».
 Options -Indexes
 

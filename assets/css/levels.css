@@ -1,0 +1,200 @@
+/* TABLE ====================================================================
+
+    * Parallax
+
+   ========================================================================== */
+
+body {
+    overflow: hidden;
+    /*background-image: url(../img/bck.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;*/
+}
+button {
+    position: absolute;
+    z-index: 999;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ==========================================================================
+    Header
+   ========================================================================== */
+
+header {
+    padding-right: 80px;
+}
+header img {
+    float: left;
+    height: 40px;
+    margin-top: 28px;
+}
+header ul {
+    line-height: 115px;
+    float: right;
+}
+header li {
+    font-family: 'CircularStd-Book';
+    display: inline-block;
+    margin-right: 48px;
+}
+header li:last-child {
+    margin-right: 0;
+}
+header li a {
+    font-size: 20px;
+    transition: color .3s;
+    color: #959595;
+}
+header li a:hover {
+    color: #131821;
+}
+header li a span {
+    transition: color .3s;
+    color: #553cd9;
+}
+header li a span:hover {
+    color: #0f0733;
+}
+h1.name {
+    position: absolute;
+    z-index: 999;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1 img {
+    height: 50px;
+}
+.bck img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.bck img:nth-child(1) {
+    z-index: 3;
+    bottom: -100px;
+}
+.bck img:nth-child(2) {
+    z-index: 1;
+    bottom: 0;
+}
+div.levels {
+    position: absolute;
+    z-index: 2;
+    top: 60%;
+    left: 50%;
+    width: 1185px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+}
+div.level1, div.level2, div.level3, div.level4 {
+    float: left;
+    width: 296px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+}
+div.level1 {
+    margin-top: 30px;
+    cursor: pointer;
+    transition: margin-top .4s;
+    background-image: url(../img/level1.png);
+}
+div.level1:hover {
+    margin-top: 0;
+}
+div.level2 {
+    margin-top: 30px;
+    background-image: url(../img/level2.png);
+}
+div.level3 {
+    margin-top: 30px;
+    background-image: url(../img/level3.png);
+}
+div.level4 {
+    margin-top: 30px;
+    background-image: url(../img/level4.png);
+}
+div.level1:hover {
+    opacity: 80%;
+}
+div img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+.scores {
+    text-align: center;
+}
+.score {
+    font-family: 'CircularStd-Book';
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+}
+.score:last-child {
+    margin-right: 0;
+}
+.score h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.score p {
+    font-family: 'CircularStd-Black';
+    font-size: 40px;
+}
+
+/* ==========================================================================
+    Highscore
+   ========================================================================== */
+
+.highscore {
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding-bottom: 50px;
+    transform: translate(-50%, -50%);
+    background: rgba(19, 24, 33, 1);
+    background: -moz-linear-gradient(top, rgba(19, 24, 33, 1) 0%, rgba(136, 54, 54, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(19, 24, 33, 1)), color-stop(100%, rgba(136, 54, 54, 1)));
+    background: -webkit-linear-gradient(top, rgba(19, 24, 33, 1) 0%, rgba(136, 54, 54, 1) 100%);
+    background: -o-linear-gradient(top, rgba(19, 24, 33, 1) 0%, rgba(136, 54, 54, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(19, 24, 33, 1) 0%, rgba(136, 54, 54, 1) 100%);
+    background: linear-gradient(to bottom, rgba(19, 24, 33, 1) 0%, rgba(136, 54, 54, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#131821', endColorstr='#883636', GradientType=0);
+}
+.highscore h1 {
+    font-family: 'CircularStd-Book';
+    font-size: 26px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #e1523a;
+}
+.highscore .inner {
+    max-width: 250px;
+    margin: 0 auto;
+}
+.highscore h2, .highscore p {
+    display: inline-block;
+}
+.highscore h2 {
+    font-family: 'CircularStd-Bold';
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 160px;
+    color: #fff;
+}
+.highscore p {
+    font-family: 'CircularStd-Black';
+    font-size: 28px;
+    color: #fff;
+}

@@ -1,4 +1,4 @@
-<?php
+<?php header('Access-Control-Allow-Origin: *');
 
 class Pages extends CI_Controller
 {
@@ -20,8 +20,8 @@ class Pages extends CI_Controller
         //title qui est injecté dans views/pages
         $data['title'] = ucfirst($page);
         //on les load
-        $this->load->view('templates/header', $data);
+        //$this->load->view('templates/header', $data);
         $this->load->view('pages/' . $page, $data);
-        $this->load->view('templates/footer', $data);
+        //$this->load->view('templates/footer', $data);
     }
 }

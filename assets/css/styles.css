@@ -1,0 +1,103 @@
+/* TABLE ====================================================================
+
+    @font-face CircularStd-Black
+               CircularStd-Bold
+               CircularStd-Book
+    * Header
+
+   ========================================================================== */
+
+@font-face {
+    font-family: 'CircularStd-Black';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'), url('fonts/CircularStd-Black.otf') format('opentype'), url('fonts/CircularStd-Black.woff') format('woff'), url('fonts/CircularStd-Black.ttf') format('truetype'), url('fonts/CircularStd-Black.svg#CircularStd-Black') format('svg');
+}
+@font-face {
+    font-family: 'CircularStd-Bold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/CircularStd-Bold.otf') format('opentype'), url('fonts/CircularStd-Bold.woff') format('woff'), url('CircularStd-Bold.ttf') format('truetype'), url('fonts/CircularStd-Bold.svg#CircularStd-Bold') format('svg');
+}
+@font-face {
+    font-family: 'CircularStd-Book';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'), url('fonts/CircularStd-Book.otf') format('opentype'), url('fonts/CircularStd-Book.woff') format('woff'), url('fonts/CircularStd-Book.ttf') format('truetype'), url('fonts/CircularStd-Book.svg#CircularStd-Book') format('svg');
+}
+body {
+    font-family: 'CircularStd-Book';
+    font-size: 16px;
+    background-color: #070707;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    font-size: 18px;
+    width: 109px;
+    height: 43px;
+    text-align: center;
+    color: #959595;
+    border: none;
+    background: url(../img/button.png) no-repeat;
+    /*border-radius: 100px;*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-transition: background 0.4s;
+    transition: background 0.4s;
+}
+button:hover {
+    background: url(../img/button01.png);
+}
+button:focus {
+    outline: 0;
+}
+
+/* ==========================================================================
+    Header
+   ========================================================================== */
+
+
+/*header {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}*/
+
+input:focus {
+    border: 2px solid #212a3b;
+    outline: none;
+}
+::-webkit-input-placeholder {
+    font-family: 'CircularStd-Book';
+    font-size: 18px;
+    color: #383838;
+}
+::-moz-placeholder {
+    font-family: 'CircularStd-Book';
+    font-size: 18px;
+    color: #383838;
+}
+
+/* for Firefox 19+ */
+
+:-ms-input-placeholder {
+    font-family: 'CircularStd-Book';
+    font-size: 18px;
+    color: #383838;
+}
+
+/* for IE */
+
+input:-moz-placeholder {
+    font-family: 'CircularStd-Book';
+    font-size: 18px;
+    color: #383838;
+}

@@ -385,8 +385,8 @@ jQuery.fn.jparallax.settings = {
 	yparallax:				    true,						//
 	xorigin:					    0.5,				    // Sets default alignment - only comes into play when travel is not 1
 	yorigin:					    0.5,				    //
-	xtravel:              0.5,              // Factor by which travel is amplified
-	ytravel:              0.5,              //
+	xtravel:              0.025,              // Factor by which travel is amplified
+	ytravel:              0.025,              //
 	takeoverFactor:		    0.65,						// Sets rate of decay curve for catching up with target mouse position
 	takeoverThresh:		    0.002,					// Sets the distance within which virtualmouse is considered to be on target, as a multiple of mouseport width.
 	frameDuration:        25							// In milliseconds
