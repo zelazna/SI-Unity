@@ -5,19 +5,16 @@
    ========================================================================== */
 
 body {
-    position: fixed;
-    width: 100%;
-    margin: 0;
-    padding: 0;
     background-image: url(../img/bck.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100%;
+    overflow: hidden;
 }
 button {
     position: absolute;
     z-index: 999;
-    bottom: -300%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -61,8 +58,77 @@ header li a span {
 header li a span:hover {
     color: #0f0733;
 }
-
-h1{
+h1 {
+    position: absolute;
+    z-index: 999;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1 img {
+    height: 40px;
+}
+.bck img {
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.bck img:nth-child(1) {
+    bottom: -100px;
+    z-index: 3;
+}
+.bck img:nth-child(2) {
+    bottom: 0;
+    z-index: 1;
+}
+div.levels {
+    z-index: 2;
+    width: 1185px;
+    height: 500px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div.level1, div.level2, div.level3, div.level4 {
+    width: 296px;
+    height: 500px;
+    background-repeat: no-repeat background-position: center;
+    background-size: 105%;
+    float: left;
+}
+div.level1 {
+    background: url(../img/level1.png);
+}
+div.level2 {
+    background: url(../img/level2.png);
+}
+div.level3 {
+    background: url(../img/level3.png);
+}
+div.level4 {
+    background: url(../img/level4.png);
+}
+div img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+.scores {
     text-align: center;
+}
+.score {
+    display: inline-block;
+    text-align: center;
+    font-family: 'CircularStd-Book';
+}
+.score h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.score p {
+    font-family: 'CircularStd-Black';
+    font-size: 40px;
 }
