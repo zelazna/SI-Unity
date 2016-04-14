@@ -24,7 +24,7 @@ class VerifyLogin extends CI_Controller
             $this->load->view('connexion/index', $data);
         } else {
             //redirectionne la page et la refresh
-            redirect('pages/view/game', 'refresh');
+            redirect('form/index', 'refresh');
         }
 
     }

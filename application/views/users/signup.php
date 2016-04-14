@@ -1,6 +1,6 @@
 <?php
-use \Facebook\FacebookRedirectLoginHelper;
-use \Facebook\FacebookSession; ?>
+//use \Facebook\FacebookRedirectLoginHelper;
+//use \Facebook\FacebookSession; ?>
 <h2><?php echo $title; ?></h2>
 
 <?php

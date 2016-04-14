@@ -33,10 +33,10 @@ class Form extends CI_Controller
         $json_data['emp_data'] = json_encode($data);
 
 // Send json encoded data to model
-        var_dump($json_data['emp_data']);
         $return = $this->json_model->insert_json_in_db($json_data);
         if ($return == true) {
             $data['result_msg'] = 'Json data successfully inserted into database !';
+            redirect('game', 'refresh');
         } else {
             $data['result_msg'] = 'Please configure your database correctly';
         }

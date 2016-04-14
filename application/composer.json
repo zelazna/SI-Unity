@@ -1,0 +1,12 @@
+{
+    "name": "constantin/application",
+    "require": {
+        "facebook/php-sdk-v4": "4.0.*"
+    },
+    "authors": [
+        {
+            "name": "constantin guidon",
+            "email": "constantin@MacBook-Pro-de-constantin.local"
+        }
+    ]
+}
