@@ -1,17 +1,4 @@
-<?php
-//use \Facebook\FacebookRedirectLoginHelper;
-//use \Facebook\FacebookSession; ?>
 <h2><?php echo $title; ?></h2>
-
-<?php
-//$fb_id = '539075076264041';
-//$fb_secret = '2ca9ebd310a9459cabe10a9355ec99c4';
-//FacebookSession::setDefaultApplication($fb_id, $fb_secret);
-//$helper = new FacebookRedirectLoginHelper('http://localhost/~constantin/semainesIntensives/SI-Unity/index.php');
-//$session = $helper->getSessionFromRedirect();
-//@fixme bug session fb
-//$_SESSION['fb_token'] = $session->getToken()
-?>
 
 <?php echo validation_errors(); ?>
 
@@ -36,6 +23,39 @@
 <input type="submit" name="submit" value="S'inscrire"/>
 
 </form>
+<!--FB sdk-->
+<?php
+$app_id = '539075076264041';
+$app_secret = '2ca9ebd310a9459cabe10a9355ec99c4';
+\Facebook\FacebookSession::setDefaultApplication($app_id, $app_secret);
+$helper = new \Facebook\FacebookRedirectLoginHelper('http://localhost/~constantin/semainesIntensives/SI-Unity/connexion/index');
+if (isset($_SESSION) && isset($_SESSION['fb_token'])) {
+    $session = new \Facebook\FacebookSession($_SESSION['fb_token']);
+} else {
+    $session = $helper->getSessionFromRedirect();
+}
+if ($session) {
+    try {
+        $_SESSION['fb_token'] = $session->getToken();
+        $request = new \Facebook\FacebookRequest($session, 'GET', '/me');
+        $profile = $request->execute()->getGraphObject('Facebook\GraphUser');
+        $email = $profile->getEmail();
+        $firstname = $profile->getFirstName();
+        $lastname = $profile->getLastName();
+        $email = $profile->getEmail();
+        $data = array(
+            'username' => $firstname,
+            'email' => $email,
+            'password' => md5($lastname)
+        );
 
+        $this->db->insert('users', $data);
 
-<?php //echo anchor($helper->getLoginUrl(), "Se Connecter avec Fesses de Bouc"); ?>
+    } catch (Exception $e) {
+        $_SESSION = "null";
+        session_destroy();
+        header('Location:login');
+    }
+} else {
+    echo '<a href="' . $helper->getLoginUrl(['email']) . '"> Se connecter avec FB </a>';
+}

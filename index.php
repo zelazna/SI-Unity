@@ -1,4 +1,4 @@
-<?php //require_once "vendor/autoload.php";
+<?php require_once "application/vendor/autoload.php";
 /**
  * CodeIgniter
  *

@@ -1,14 +1,3 @@
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.jparallax.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#parallax').jparallax();
-    });
-</script>
-</head>
-
-<body>
-
 <div class="content">
     <div id="parallax">
         <p style="text-align:center; width:1000px;height:550px;padding-top:0px;"><img
@@ -26,3 +15,10 @@
     <a href="<?php echo base_url(); ?>connexion/index">Login</a>
     <a href="<?php echo base_url(); ?>game">Jouer</a>
 </div>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.jparallax.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#parallax').jparallax();
+    });
+</script>
