@@ -10,6 +10,7 @@ class Form extends CI_Controller
         $this->load->helper('url_helper');
         $this->load->helper('file');
         $this->load->helper('form');
+        $this->load->library('session');
         $this->load->model("json_model");
     }
 

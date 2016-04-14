@@ -8,7 +8,7 @@
 <body>
 <div class="main">
     <div id="content">
-        <h2 id="form_head">Convert CodeIgniter Query to Json & Insert Into Database</h2>
+        <h2 id="form_head">Astuces: prennez les coeurs!!</h2>
         <div id="form_input">
             <?php
             echo form_open('form/data_submitted');
@@ -18,7 +18,7 @@
                 'id' => 'score',
                 'class' => 'input_box',
                 'placeholder' => 'Please Enter Int',
-                'required' => 'required'
+                'required' => 'required',
             );
             echo form_input($data_name);
             echo form_label('scores_id');
@@ -28,7 +28,8 @@
                 'id' => 'number_id',
                 'class' => 'input_box',
                 'placeholder' => 'score id',
-                'required' => 'required'
+                'required' => 'required',
+                'value'=> $_SESSION['id']
             );
             echo form_input($data_email);
 //            echo form_label('Gender');
@@ -51,7 +52,7 @@
             ?>
         </div>
         <div id="form_button">
-            <?php echo form_submit('submit', 'Submit', "class='submit'"); ?>
+            <?php echo form_submit('submit', 'Compris!', "class='submit'"); ?>
         </div>
         <?php echo form_close(); ?>
     </div>
