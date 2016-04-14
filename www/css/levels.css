@@ -1,6 +1,7 @@
 /* TABLE ====================================================================
 
-    * Parallax
+    * Header
+    * Highscore
 
    ========================================================================== */
 
@@ -146,12 +147,36 @@ div img {
     font-family: 'CircularStd-Black';
     font-size: 40px;
 }
-
+.end-level h2 {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+.end-level h3 {
+    color: #fff;
+}
+.end-level p {
+    margin-bottom: 30px;
+    color: #fff;
+}
+.end-level li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.end-level li a {
+    font-size: 20px;
+    color: #fff;
+}
+.end-level li span {
+    color: #959595;
+}
 /* ==========================================================================
     Highscore
    ========================================================================== */
 
-.highscore, .profil {
+.highscore, .profil, .end-level {
     position: absolute;
     z-index: 9999;
     top: 50%;
@@ -212,13 +237,16 @@ div img {
     vertical-align: middle;
 }
 
-/* display:none */
-
+/*
+* display:none
+*/
 
 .profil {
     display: none;
 }
-
 .highscore {
+    display: none;
+}
+.end-level {
     display: none;
 }
