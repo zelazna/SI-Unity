@@ -99,16 +99,28 @@ div.level1, div.level2, div.level3, div.level4 {
     float: left;
 }
 div.level1 {
-    background: url(../img/level1.png);
+    margin-top: 30px;
+    background-image: url(../img/level1.png);
+    cursor: pointer;
+    transition: margin-top 0.4s;
+}
+div.level1:hover {
+    margin-top: 0px;
 }
 div.level2 {
-    background: url(../img/level2.png);
+    margin-top: 30px;
+    background-image: url(../img/level2.png);
 }
 div.level3 {
-    background: url(../img/level3.png);
+    margin-top: 30px;
+    background-image: url(../img/level3.png);
 }
 div.level4 {
-    background: url(../img/level4.png);
+    margin-top: 30px;
+    background-image: url(../img/level4.png);
+}
+div.level1:hover {
+    opacity: 80%;
 }
 div img {
     margin: 0 auto;
