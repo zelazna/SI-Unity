@@ -26,120 +26,122 @@
     </script>
 
     <style media="screen">
-    @-webkit-keyframes anim {
-        0% {
-            -webkit-transform: rotateY(0deg) rotateZ(0deg);
-            transform: rotateY(0deg) rotateZ(0deg);
+        @-webkit-keyframes anim {
+            0% {
+                -webkit-transform: rotateY(0deg) rotateZ(0deg);
+                transform: rotateY(0deg) rotateZ(0deg);
+            }
+            100% {
+                -webkit-transform: rotateY(360deg) rotateZ(360deg);
+                transform: rotateY(360deg) rotateZ(360deg);
+            }
         }
-        100% {
-            -webkit-transform: rotateY(360deg) rotateZ(360deg);
-            transform: rotateY(360deg) rotateZ(360deg);
+
+        @keyframes anim {
+            0% {
+                -webkit-transform: rotateY(0deg) rotateZ(0deg);
+                transform: rotateY(0deg) rotateZ(0deg);
+            }
+            100% {
+                -webkit-transform: rotateY(360deg) rotateZ(360deg);
+                transform: rotateY(360deg) rotateZ(360deg);
+            }
         }
-    }
 
-    @keyframes anim {
-        0% {
-            -webkit-transform: rotateY(0deg) rotateZ(0deg);
-            transform: rotateY(0deg) rotateZ(0deg);
+        .shape0 {
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 47%;
+            -webkit-animation: anim 2s linear 0s infinite;
+            animation: anim 2s linear 0s infinite;
         }
-        100% {
-            -webkit-transform: rotateY(360deg) rotateZ(360deg);
-            transform: rotateY(360deg) rotateZ(360deg);
+
+        .shape1 {
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 47%;
+            -webkit-animation: anim 2s linear 0.1s infinite;
+            animation: anim 2s linear 0.1s infinite;
         }
-    }
 
-    .shape0 {
-        width: 50px;
-        height: 50px;
-        border-radius: 90px;
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        background-color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 47%;
-        -webkit-animation: anim 2s linear 0s infinite;
-        animation: anim 2s linear 0s infinite;
-    }
+        .shape2 {
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 47%;
+            -webkit-animation: anim 2s linear 0.2s infinite;
+            animation: anim 2s linear 0.2s infinite;
+        }
 
-    .shape1 {
-        width: 50px;
-        height: 50px;
-        border-radius: 90px;
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        background-color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 47%;
-        -webkit-animation: anim 2s linear 0.1s infinite;
-        animation: anim 2s linear 0.1s infinite;
-    }
+        .shape3 {
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 47%;
+            -webkit-animation: anim 2s linear 0.3s infinite;
+            animation: anim 2s linear 0.3s infinite;
+        }
 
-    .shape2 {
-        width: 50px;
-        height: 50px;
-        border-radius: 90px;
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        background-color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 47%;
-        -webkit-animation: anim 2s linear 0.2s infinite;
-        animation: anim 2s linear 0.2s infinite;
-    }
+        .shape4 {
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 47%;
+            -webkit-animation: anim 2s linear 0.4s infinite;
+            animation: anim 2s linear 0.4s infinite;
+        }
 
-    .shape3 {
-        width: 50px;
-        height: 50px;
-        border-radius: 90px;
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        background-color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 47%;
-        -webkit-animation: anim 2s linear 0.3s infinite;
-        animation: anim 2s linear 0.3s infinite;
-    }
+        .shape5 {
+            width: 50px;
+            height: 50px;
+            border-radius: 90px;
+            -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 47%;
+            -webkit-animation: anim 2s linear 0.5s infinite;
+            animation: anim 2s linear 0.5s infinite;
+        }
 
-    .shape4 {
-        width: 50px;
-        height: 50px;
-        border-radius: 90px;
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        background-color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 47%;
-        -webkit-animation: anim 2s linear 0.4s infinite;
-        animation: anim 2s linear 0.4s infinite;
-    }
+        .wrapper {
+            position: absolute;
+            margin: 80px 0 0 80px;
+            -webkit-filter: url("#filter");
+            filter: url("#filter");
+        }
 
-    .shape5 {
-        width: 50px;
-        height: 50px;
-        border-radius: 90px;
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        background-color: #fff;
-        position: absolute;
-        top: 50%;
-        left: 47%;
-        -webkit-animation: anim 2s linear 0.5s infinite;
-        animation: anim 2s linear 0.5s infinite;
-    }
-    .wrapper {
-        position: absolute;
-        margin: 80px 0 0 80px;
-        -webkit-filter: url("#filter");
-        filter: url("#filter");
-    }
-    svg {
-        height: 0;
-    }
+        svg {
+            height: 0;
+        }
     </style>
 
 </head>
@@ -166,13 +168,13 @@
     </svg>
 
     <header>
-            <nav>
-                <ul>
-                    <li><a href="">Highscores</a></li>
-                    <li><a href="sign-in.html">Sign in</a></li>
-                    <li><a href="sign-up.html">Create account</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul>
+                <li><a href="">Highscores</a></li>
+                <li><a href="sign-in.html">Sign in</a></li>
+                <li><a href="sign-up.html">Create account</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="content">
@@ -183,7 +185,9 @@
         </div>
     </div>
 
-    <a href="loading.html"><button type="button" name="button">Play</button></a>
+    <a href="loading.html">
+        <button type="button" name="button">Play</button>
+    </a>
 
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
