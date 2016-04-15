@@ -193,7 +193,7 @@
     </div>
 </div>
 
-<a href="file:///Users/constantin/Sites/semainesIntensives/SI-Unity/game.php">
+<a href="http://localhost:8000/game.php">
     <button type="button" name="button">Play</button>
 </a>
 
