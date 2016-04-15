@@ -239,7 +239,7 @@ control = window.control || {};
 	function GetScore(score) {
 		control.gestion.updateScore(score);
 		$.ajax({
-			url: "score.php",
+			url: "application/views/welcome_message.php",
 			type: 'POST',
 			data: 'score=' + localStorage.score,
 			dataType: "text/plain",
