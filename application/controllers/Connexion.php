@@ -15,9 +15,9 @@ class Connexion extends CI_Controller
         $data['title'] = 'Login';
         $this->load->helper('form');
         $this->load->library('session');
-        $this->load->view('templates/header', $data);
+//        $this->load->view('templates/header', $data);
         $this->load->view('connexion/index');
-        $this->load->view('templates/footer', $data);
+//        $this->load->view('templates/footer', $data);
     }
 
 }

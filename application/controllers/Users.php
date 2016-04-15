@@ -17,7 +17,7 @@ class Users extends CI_Controller
         $data['title'] = 'HighScores';
         //chargements des vues
 
-        $this->load->view('templates/header', $data);
+//        $this->load->view('templates/header', $data);
         $this->load->view('users/index', $data);
         $this->load->view('templates/footer');
     }

@@ -26,7 +26,7 @@
 
 <header>
     <div class="inner">
-        <h1><a href="<?php echo base_url() ?>assets/index.html"><img src="<?php echo base_url() ?>assets/img/logo.png"
+        <h1><a href="<?php echo base_url() ?>home"><img src="<?php echo base_url() ?>assets/img/logo.png"
                                                                      alt="AUD"></a></h1>
     </div>
 </header>
