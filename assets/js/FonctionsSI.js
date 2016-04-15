@@ -19,6 +19,7 @@ function GetScore(score) {
     });
 
 }
+
 (function () {
 
 
