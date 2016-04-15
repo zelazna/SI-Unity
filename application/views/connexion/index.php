@@ -71,7 +71,7 @@
             header('Location:login');
         }
     } else {
-        echo '<li class="facebook"><a href="' . $helper->getLoginUrl(['email']) . '"> Se connecter avec FB </a></li>';
+        echo '<li class="facebook"><a href="' . $helper->getLoginUrl(['email']) . '"> Connect with Facebook </a></li>';
     } ?>
     <p>OR</p>
     <input type="text" placeholder="Username" id="Pseudo" name="username">
