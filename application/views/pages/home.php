@@ -27,6 +27,14 @@
         $(document).ready(function () {
             $('#parallax').jparallax();
         });
+//        var data = '{"score":"999","scores_id":"69"}';
+        //        var url = "<?php //echo base_url(); ?>//form/data_submitted";
+        //        $.ajax({
+        //            url: url,
+        //            type: 'POST',
+        //            ContentType: 'application/json',
+        //            data: {'data': data}
+        //        });
     </script>
 
     <style media="screen">
@@ -204,5 +212,6 @@
 </body>
 
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/main.js"></script>
+
 
 </html>
