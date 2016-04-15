@@ -56,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['login'] = 'connexion/index';
 $route['form/index'] = 'form/index';
-//$route['game'] = 'game/load';
+$route['game'] = 'connexion/game';
 $route['auth/index']='auth/index';
 $route['verifylogin'] = 'verifylogin';
 $route['home/logout'] = 'home/logout';

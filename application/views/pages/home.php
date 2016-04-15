@@ -27,7 +27,7 @@
         $(document).ready(function () {
             $('#parallax').jparallax();
         });
-//        var data = '{"score":"999","scores_id":"69"}';
+        //        var data = '{"score":"999","scores_id":"69"}';
         //        var url = "<?php //echo base_url(); ?>//form/data_submitted";
         //        $.ajax({
         //            url: url,
@@ -179,13 +179,20 @@
         </filter>
     </defs>
 </svg>
-
 <header>
     <nav>
         <ul>
             <li><a href="<?php echo base_url(); ?>users">Highscores</a></li>
-            <li><a href="<?php echo base_url(); ?>login">Sign in</a></li>
-            <li><a href="<?php echo base_url(); ?>signup">Create account</a></li>
+            <?php if ((isset($_SESSION['username'])) && (!empty($_SESSION['username']))) {
+//                echo "<li><a href=" . site_url('home/login') . '>Sign in</a></li>';
+            } else {
+                echo "<li><a href=" . site_url('login') . '>Login</a></li>';
+                echo "<li><a href=" . site_url('signup') . '>Create Account</a></li>';
+            }
+            if ((isset($_SESSION['username'])) && (!empty($_SESSION['username']))) echo "<li><a href=" . site_url('users/' . $_SESSION['username']) . '>' . ucfirst($_SESSION['username']) . '</a>' ?>
+            ?>
+            <!--            <li><a href="--><?php //echo base_url(); ?><!--signup">Create account</a></li>-->
+            <?php if ((isset($_SESSION['username'])) && (!empty($_SESSION['username']))) echo "<li><a href=" . site_url('home/logout') . '>Logout</a></li>' ?>
         </ul>
     </nav>
 </header>
@@ -201,7 +208,7 @@
     </div>
 </div>
 
-<a href="http://localhost:8000/game.php">
+<a href="<?php echo base_url(); ?>assets/game.php">
     <button type="button" name="button">Play</button>
 </a>
 

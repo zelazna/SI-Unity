@@ -181,17 +181,16 @@
     </defs>
 </svg>
 
-<h1 class="name"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/logo-levels.png"
+<h1 class="name"><a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/logo.png"
                                                           alt=""></a></h1>
 <header>
     <nav>
         <ul>
-<!--            <li><a href="">Highscores</a></li>-->
-            <li><<a href="<?php if ((isset($_SESSION['username'])) && (!empty($_SESSION['username']))) echo site_url('users/' . $_SESSION['username']); ?>">
-                    <?php if ((isset($_SESSION['username'])) && (!empty($_SESSION['username']))) echo 'pseudo: ' . $_SESSION['username']; ?>
+            <li>
+                <<a href="<?php if ((isset($_SESSION['username'])) && (!empty($_SESSION['username']))) echo site_url('users/' . $_SESSION['username']); ?>">
+                    <?php if ((isset($_SESSION['username'])) && (!empty($_SESSION['username']))) echo ucfirst($_SESSION['username']); ?>
                 </a></li>
-            <?php if ((isset($_SESSION['username'])) && (!empty($_SESSION['username'])))
-                echo "<li><a href=" . site_url('home/logout') . '>Logout</a>' ?>
+            <?php if ((isset($_SESSION['username'])) && (!empty($_SESSION['username']))) echo "<li><a href=" . site_url('home/logout') . '>Logout</a>' ?>
         </ul>
     </nav>
 </header>
@@ -211,7 +210,7 @@
         <?php endforeach; ?>
     </div>
 </div>
-<a href="<?php echo site_url();?>/game">
+<a href="<?php echo site_url(); ?>/game">
     <button type="button" name="button">Continue</button>
 </a>
 <div class="bck">
@@ -219,63 +218,76 @@
     <img src="<?php echo base_url(); ?>assets/img/bck-levels01.png" alt=""/>
 </div>
 <div class="levels">
-    <div class="level1">
-        <img src="<?php echo base_url(); ?>assets/img/level1-text.png" alt=""/>
-        <div class="scores">
-            <div class="score">
-                <h3>Your Score</h3>
-                <p>196</p>
+    <a href="<?php echo base_url(); ?>assets/game.php">
+        <div class="level1">
+            <img src="<?php echo base_url(); ?>assets/img/level1-text.png" alt=""/>
+            <div class="scores">
+                <div class="score">
+                    <h3>Your Score</h3>
+                    <p>196</p>
+                </div>
+                <div class="score">
+                    <h3>High Score</h3>
+                    <p>976</p>
+                </div>
             </div>
-            <div class="score">
-                <h3>High Score</h3>
-                <p>976</p>
-            </div>
+    </a>
+</div>
+
+<div class="level2">
+    <img src="<?php echo base_url(); ?>assets/img/level2-text.png" alt=""/>
+    <div class="scores">
+        <div class="score">
+            <h3>Your Score</h3>
+            <p>-</p>
+        </div>
+        <div class="score">
+            <h3>High Score</h3>
+            <p>856</p>
         </div>
     </div>
-    <div class="level2">
-        <img src="<?php echo base_url(); ?>assets/img/level2-text.png" alt=""/>
-        <div class="scores">
-            <div class="score">
-                <h3>Your Score</h3>
-                <p>-</p>
-            </div>
-            <div class="score">
-                <h3>High Score</h3>
-                <p>856</p>
-            </div>
+</div>
+<div class="level3">
+    <img src="<?php echo base_url(); ?>assets/img/level3-text.png" alt=""/>
+    <div class="scores">
+        <div class="score">
+            <h3>Your Score</h3>
+            <p>-</p>
+        </div>
+        <div class="score">
+            <h3>High Score</h3>
+            <p>780</p>
         </div>
     </div>
-    <div class="level3">
-        <img src="<?php echo base_url(); ?>assets/img/level3-text.png" alt=""/>
-        <div class="scores">
-            <div class="score">
-                <h3>Your Score</h3>
-                <p>-</p>
-            </div>
-            <div class="score">
-                <h3>High Score</h3>
-                <p>780</p>
-            </div>
+</div>
+<div class="level4">
+    <img src="<?php echo base_url(); ?>assets/img/level4-text.png" alt=""/>
+    <div class="scores">
+        <div class="score">
+            <h3>Your Score</h3>
+            <p>-</p>
+        </div>
+        <div class="score">
+            <h3>High Score</h3>
+            <p>678</p>
         </div>
     </div>
-    <div class="level4">
-        <img src="<?php echo base_url(); ?>assets/img/level4-text.png" alt=""/>
-        <div class="scores">
-            <div class="score">
-                <h3>Your Score</h3>
-                <p>-</p>
-            </div>
-            <div class="score">
-                <h3>High Score</h3>
-                <p>678</p>
-            </div>
-        </div>
-    </div>
+</div>
 </div>
 
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-76478115-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 <![endif]-->
 </body>
 

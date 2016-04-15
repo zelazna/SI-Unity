@@ -20,5 +20,12 @@ class Connexion extends CI_Controller
 //        $this->load->view('templates/footer', $data);
     }
 
+    public function game()
+    {
+//        $this->load->view('templates/header', $data);
+        $this->load->view('connexion/game');
+//        $this->load->view('templates/footer', $data);
+    }
+
 }
 

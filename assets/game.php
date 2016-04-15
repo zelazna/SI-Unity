@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | New Unity Project 2</title>
     <style>body {
-            background: url("assets/img/bck.png");
+            background: url("img/bck.png");
         }</style>
     <script type='text/javascript'
             src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
@@ -152,6 +152,6 @@
 </div>
 <p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;
 </p>
-<script src="assets/js/FonctionsSI.js"></script>
+<script src="js/FonctionsSI.js"></script>
 </body>
 </html>
