@@ -152,6 +152,6 @@
 </div>
 <p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;
 </p>
-<script src="<?php echo base_url() ?>/assets/js/FonctionsSI.js"></script>
+<script src="assets/js/FonctionsSI.js"></script>
 </body>
 </html>
