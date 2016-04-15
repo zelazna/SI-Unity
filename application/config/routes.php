@@ -56,11 +56,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['login'] = 'connexion/index';
 $route['form/index'] = 'form/index';
+//$route['game'] = 'game/load';
 $route['auth/index']='auth/index';
 $route['verifylogin'] = 'verifylogin';
 $route['home/logout'] = 'home/logout';
 $route['signup'] = 'users/signup';
-$route['game']='pages/view/game';
+$route['game']='/Users/constantin/Sites/semainesIntensives/SI-Unity/game.php';
 $route['users/(:any)'] = 'users/view/$1';
 $route['users'] = 'users';
 $route['(:any)'] = 'pages/view/$1';

@@ -193,7 +193,7 @@
     </div>
 </div>
 
-<a href="<?php echo base_url(); ?>game">
+<a href="file:///Users/constantin/Sites/semainesIntensives/SI-Unity/game.php">
     <button type="button" name="button">Play</button>
 </a>
 

@@ -29,8 +29,8 @@
 
 <header>
     <div class="inner">
-        <h1><a href="<?php echo site_url(); ?>/home"><img src="<?php echo site_url() ?>/assets/img/logo.png"
-                                                               alt="AUD"></a></h1>
+        <h1><a href="<?php echo base_url(); ?>home"><img src="<?php echo base_url() ?>/assets/img/logo.png"
+                                                         alt="AUD"></a></h1>
     </div>
 </header>
 <div class="inner">
@@ -71,7 +71,7 @@
             header('Location:login');
         }
     } else {
-        echo '<li><a href="' . $helper->getLoginUrl(['email']) . '"> Se connecter avec FB </a></li>';
+        echo '<li class="facebook"><a href="' . $helper->getLoginUrl(['email']) . '"> Se connecter avec FB </a></li>';
     } ?>
     <p>OR</p>
     <input type="text" placeholder="Username" id="Pseudo" name="username">
