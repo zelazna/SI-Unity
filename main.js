@@ -239,7 +239,7 @@ control = window.control || {};
 	function GetScore(score) {
 		control.gestion.updateScore(score);
 		$.ajax({
-			url: "score.php",
+			url: "http://localhost/~constantin/semainesIntensives/SI-Unity/index.php/form/data_submitted",
 			type: 'POST',
 			data: 'score=' + localStorage.score,
 			dataType: "text/plain",
